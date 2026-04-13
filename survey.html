@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<link rel="icon" href="seagull.jpg">
-<link rel="shortcut icon" href="seagull.jpg">
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Survey</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="seagull.jpg">
+    <link rel="shortcut icon" href="seagull.jpg">
 </head>
 
 <body>
 
-<header><h1>Survey</h1></header>
+<header>
+    <h1>Survey</h1>
+</header>
 
 <nav>
     <a href="index.html">Home</a>
@@ -27,35 +31,28 @@
 </nav>
 
 <main>
+
     <section>
-        <form>
-            <h2>HarborSense Survey</h2>
-
-            <label>Would you use water monitoring?</label><br>
-            <input type="radio" name="q1"> Yes
-            <input type="radio" name="q1"> No<br><br>
-
-            <label>Main concern:</label><br>
-            <select>
-                <option>Pollution</option>
-                <option>Cost</option>
-                <option>Safety</option>
-            </select><br><br>
-
-            <label>Comments:</label><br>
-            <textarea></textarea><br>
-
-            <button type="submit">Submit</button>
-        </form>
+        <h2>Survey</h2>
+        <div style="max-width:1000px; margin:auto;">
+            <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfznrmJlpTd5BZZWQx3nNgZ3ncryQOreS5XzorxWOmwt73kNw/viewform?usp=sharing"
+                    height="1000"
+                    style="border:0; width:100%;">
+            </iframe>
+        </div>
     </section>
 </main>
 
-<footer><p>&copy; 2026 HarborSense</p></footer>
-<section>
+<footer>
+    <p>&copy; 2026 HarborSense</p>
+</footer>
+
+<div>
     <a href="seagull.jpg" target="_blank">
         <img src="seagull.jpg" alt="seagull" class="thumbnail">
     </a>
+</div>
 
-</section>
 </body>
 </html>
