@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Technology</title>
+    <title>Technology | HarborSense</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="seagull.jpg">
-    <link rel="shortcut icon" href="seagull.jpg">
+    <link rel="icon" href="boat.png">
+    <link rel="shortcut icon" href="boat.png">
 
-    <meta name="description" content="HarborSense monitors ocean pollution using smart sensors.">
-    <meta name="keywords" content="ocean pollution, marina, sensors, environment">
+    <meta name="description" content="HarborSense uses smart solar-powered sensors to monitor ocean pollution in real time.">
+    <meta name="keywords" content="ocean pollution, sensors, marina, environmental monitoring, IoT buoy">
     <meta name="author" content="Your Name">
 </head>
 
@@ -35,36 +35,117 @@
 </nav>
 
 <section>
+
     <img src="buoy.png" class="section-img" alt="HarborSense buoy sensor device">
 
-    <h2>Our Technology</h2>
+    <h2>Overview</h2>
+    <p>
+        HarborSense uses solar-powered IoT buoy systems to continuously monitor water quality in marinas,
+        ports, and coastal environments. Each unit collects real-time environmental data and transmits it
+        wirelessly to a central dashboard for analysis and alerts.
+    </p>
 
     <p>
-        Each HarborSense unit is designed to operate independently using solar power,
-        ensuring continuous monitoring without the need for constant maintenance.
-        The system collects data and transmits it wirelessly to a central dashboard.
+        The goal is to provide early detection of pollution events, especially those caused by storm runoff
+        and sudden environmental changes.
     </p>
+
+    <h2>System Architecture</h2>
+
+    <table>
+        <tr>
+            <th>Stage</th>
+            <th>Function</th>
+        </tr>
+        <tr>
+            <td>1. Sensing</td>
+            <td>Buoy sensors measure pH, turbidity, temperature, conductivity, and depth</td>
+        </tr>
+        <tr>
+            <td>2. Power System</td>
+            <td>Solar panel charges a LiFePO4 battery for continuous operation</td>
+        </tr>
+        <tr>
+            <td>3. Data Processing</td>
+            <td>Microcontroller filters and prepares sensor data</td>
+        </tr>
+        <tr>
+            <td>4. Transmission</td>
+            <td>LoRa module sends data to a central server over long distances</td>
+        </tr>
+        <tr>
+            <td>5. Analysis</td>
+            <td>System detects pollution spikes and environmental anomalies</td>
+        </tr>
+        <tr>
+            <td>6. Alerts</td>
+            <td>Notifications are sent when dangerous conditions are detected</td>
+        </tr>
+    </table>
 
     <h2>Sensor Components</h2>
 
+    <p>
+        The HarborSense unit is built from durable, marine-grade components designed for long-term deployment
+        in harsh coastal environments.
+    </p>
+
     <table>
-        <tr><td>Industrial pH probe</td></tr>
-        <tr><td>10W solar starter kit (panel, regulator)</td></tr>
-        <tr><td>Conductivity probe</td></tr>
-        <tr><td>12V 10Ah LiFePO4 battery</td></tr>
-        <tr><td>Depth / pressure sensor</td></tr>
-        <tr><td>Mounting hardware</td></tr>
-        <tr><td>Turbidity Sensor</td></tr>
-        <tr><td>Power management & surge protection</td></tr>
-        <tr><td>LoRa communications module</td></tr>
-        <tr><td>Microcontroller & PCB (prototype run)</td></tr>
-        <tr><td>Enclosure, connectors & cabling</td></tr>
-        <tr><td>Calibration & QA per node</td></tr>
+        <tr>
+            <th>Component</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>Industrial pH Probe</td>
+            <td>Measures acidity and alkalinity of water</td>
+        </tr>
+        <tr>
+            <td>Turbidity Sensor</td>
+            <td>Detects water clarity and sediment levels</td>
+        </tr>
+        <tr>
+            <td>Conductivity Probe</td>
+            <td>Measures salt and chemical concentration</td>
+        </tr>
+        <tr>
+            <td>Depth / Pressure Sensor</td>
+            <td>Tracks water depth and pressure changes</td>
+        </tr>
+        <tr>
+            <td>Solar Power Kit (10W)</td>
+            <td>Provides renewable energy for continuous operation</td>
+        </tr>
+        <tr>
+            <td>LiFePO4 Battery (12V 10Ah)</td>
+            <td>Stores energy for nighttime and low-light operation</td>
+        </tr>
+        <tr>
+            <td>LoRa Communication Module</td>
+            <td>Enables long-range wireless data transmission</td>
+        </tr>
+        <tr>
+            <td>Microcontroller & PCB</td>
+            <td>Processes and manages sensor data</td>
+        </tr>
+        <tr>
+            <td>Marine Enclosure</td>
+            <td>Protects electronics from saltwater and weather damage</td>
+        </tr>
     </table>
 
+    <h2>Why This Design Works</h2>
+
     <p>
-        These components work together to collect and transmit real-time environmental data.
+        This system is designed to be low-cost, scalable, and easy to deploy. Unlike traditional monitoring
+        stations that are expensive and fixed in place, HarborSense buoys can be deployed in multiple locations
+        and expanded over time.
     </p>
+
+    <p>
+        This makes it especially useful for smaller communities, marinas, and coastal regions that currently
+        lack real-time environmental monitoring tools.
+    </p>
+
 </section>
 
 <footer>
