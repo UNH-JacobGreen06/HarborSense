@@ -204,7 +204,13 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+
 }
+
+footer a {
+    color: white;
+}
+
 .thumbnail {
     width: 150px;
     height: 100px;
