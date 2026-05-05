@@ -74,15 +74,24 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background: #0077b6;
+}
+
+header p {
+    font-size: 0.95em;
+    font-weight: normal;
+    opacity: 0.85;
+    margin: 4px 0 0 0;
+    letter-spacing: 0.04em;
 }
 
 main {
     grid-area: main;
     padding: 20px;
-    max-width: 1000px;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .hero {
@@ -136,12 +145,11 @@ section {
     background: white;
     margin: 40px auto;
     border-radius: 12px;
-    max-width: 900px;
+    width: 92%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 section p {
-    max-width: 700px;
     margin: 15px auto;
     line-height: 1.6;
     font-size: 18px;
@@ -192,7 +200,7 @@ button {
 
 footer {
     grid-area: footer;
-    background: #03045e;
+    background: #023e8a;
     color: white;
     text-align: center;
     padding: 15px;
