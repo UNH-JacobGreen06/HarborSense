@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
-
+    <title>HarborSense</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="boat.png">
     <link rel="shortcut icon" href="boat.png">
-
     <meta name="description" content="HarborSense monitors ocean pollution using smart sensors.">
-    <meta name="keywords" content="ocean pollution, marina, sensors, environment, HarborSense, Pollution, Global Warming, Oceans, Harbors, Harbours, Sensors">
+    <meta name="keywords" content="ocean pollution, marina, sensors, environment, HarborSense">
     <meta name="author" content="Lauren Lynch, Jacob Greenberg, Ethan Young">
 </head>
-<body>
-
 <body>
 
 <header>
@@ -24,38 +19,136 @@
 
 <nav>
     <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="technology.html">Technology</a>
     <a href="map.html">Live Map</a>
     <a href="market.html">Market</a>
     <a href="research.html">Research</a>
     <a href="planning.html">Planning</a>
     <a href="survey.html">Survey</a>
-    <a href="initial.html">Initial Reflection</a>
-    <a href="final.html">Final Reflection</a>
+    <a href="reflection.html">Reflection</a>
     <a href="contact.html">Contact</a>
 </nav>
-<main>
-<div class="hero">
-    <img src="marina.jpg" alt="Marina">
-</div>
 
-<section>
-    <h2>Welcome</h2>
-    <p>
-        HarborSense helps communities better understand the health of their coastal waters.
+<main>
+
+    <div class="hero">
+        <img src="marina.jpg" alt="Marina">
+    </div>
+
+    <!-- ── WELCOME ─────────────────────────────────────────── -->
+    <section id="home">
+        <h2>Welcome to HarborSense</h2>
+        <p>HarborSense helps communities better understand the health of their coastal waters.
         By combining smart sensors with real-time data, we provide early warnings for pollution,
-        helping prevent long-term environmental damage.
-        <a href="about.html">Learn More →</a>
-    </p>
-</section>
+        helping prevent long-term environmental damage.</p>
+        <p>Scroll down to learn about the problem we are solving, and the technology we built to address it.</p>
+    </section>
+
+    <!-- ── ABOUT ──────────────────────────────────────────── -->
+    <section id="about">
+        <h2>About &amp; The Problem</h2>
+
+        <img src="pollution.jpg" class="section-img" alt="Ocean pollution">
+
+        <h3>The Problem</h3>
+        <p>Many marinas lack the tools to monitor pollution effectively. As a result, harmful
+        substances such as oil, plastics, and chemicals accumulate over time, damaging
+        ecosystems and threatening marine life.</p>
+
+        <p style="font-size:1.2em; font-weight:bold; color:#0077b6;">
+            80% of ocean pollution comes from land-based sources, often carried into waterways during storms.
+        </p>
+
+        <h3>Why This Matters</h3>
+        <p>Because most pollution originates on land, it is often carried into coastal waters through runoff,
+        especially during storms. This type of pollution, known as <em>nonpoint source pollution</em>, does not
+        come from a single identifiable source, making it difficult to track and control.</p>
+        <p>Without real-time monitoring, pollution can build up unnoticed, leading to long-term environmental
+        damage and increased risks to both ecosystems and human health.</p>
+
+        <h3>How HarborSense Works</h3>
+        <p>HarborSense transforms raw environmental data into actionable insights that communities can use
+        to make informed decisions.</p>
+        <table>
+            <tr><th>Step</th><th>Description</th></tr>
+            <tr><td>Data Collection</td><td>Sensors collect real-time data such as pH, turbidity, and temperature</td></tr>
+            <tr><td>Data Transmission</td><td>Collected data is sent to a central monitoring system</td></tr>
+            <tr><td>Analysis</td><td>Patterns and environmental changes are analyzed</td></tr>
+            <tr><td>Alert System</td><td>Alerts are triggered when pollution levels rise</td></tr>
+            <tr><td>Community Action</td><td>Communities take proactive action before environmental damage occurs</td></tr>
+        </table>
+
+        <h3>Understanding the Data</h3>
+        <table>
+            <tr><th>Metric</th><th>Normal Range</th><th>Risk Indicator</th><th>Impact</th></tr>
+            <tr><td>pH</td><td>6.5 &ndash; 8.5</td><td>Too high or too low</td><td>Harms marine organisms</td></tr>
+            <tr><td>Turbidity</td><td>Low</td><td>High levels</td><td>Indicates runoff or pollution</td></tr>
+            <tr><td>Temperature</td><td>Stable</td><td>Rapid increase</td><td>Can trigger algal blooms</td></tr>
+        </table>
+
+        <h3>Our Mission</h3>
+        <p>Our goal is to bridge the gap in environmental monitoring by making it accessible,
+        affordable, and easy to understand for communities around the world.</p>
+
+        <h3>Real-World Partners</h3>
+        <p>We reached out to the
+        <a href="https://www.newhaven.edu/about/facilities/marine-science-center.php" target="_blank">Marine Science Center at Canal Dock</a>
+        at the University of New Haven for guidance, and we draw inspiration from
+        <a href="https://oceana.org/" target="_blank">Oceana</a>, the world's largest international ocean conservation organization.</p>
+    </section>
+
+    <!-- ── TECHNOLOGY ─────────────────────────────────────── -->
+    <section id="technology">
+        <h2>Our Technology</h2>
+
+        <img src="buoy.png" class="section-img" alt="HarborSense buoy sensor device">
+
+        <h3>Overview</h3>
+        <p>HarborSense uses solar-powered IoT buoy systems to continuously monitor water quality in marinas,
+        ports, and coastal environments. Each unit collects real-time environmental data and transmits it
+        wirelessly to a central dashboard for analysis and alerts.</p>
+        <p>The goal is to provide early detection of pollution events, especially those caused by storm runoff
+        and sudden environmental changes.</p>
+
+        <h3>System Architecture</h3>
+        <table>
+            <tr><th>Stage</th><th>Function</th></tr>
+            <tr><td>1. Sensing</td><td>Buoy sensors measure pH, turbidity, temperature, conductivity, and depth</td></tr>
+            <tr><td>2. Power System</td><td>Solar panel charges a LiFePO4 battery for continuous operation</td></tr>
+            <tr><td>3. Data Processing</td><td>Microcontroller filters and prepares sensor data</td></tr>
+            <tr><td>4. Transmission</td><td>LoRa module sends data to a central server over long distances</td></tr>
+            <tr><td>5. Analysis</td><td>System detects pollution spikes and environmental anomalies</td></tr>
+            <tr><td>6. Alerts</td><td>Notifications are sent when dangerous conditions are detected</td></tr>
+        </table>
+
+        <h3>Sensor Components</h3>
+        <p>The HarborSense unit is built from durable, marine-grade components designed for long-term
+        deployment in harsh coastal environments.</p>
+        <table>
+            <tr><th>Component</th><th>Purpose</th></tr>
+            <tr><td>Industrial pH Probe</td><td>Measures acidity and alkalinity of water</td></tr>
+            <tr><td>Turbidity Sensor</td><td>Detects water clarity and sediment levels</td></tr>
+            <tr><td>Conductivity Probe</td><td>Measures salt and chemical concentration</td></tr>
+            <tr><td>Depth / Pressure Sensor</td><td>Tracks water depth and pressure changes</td></tr>
+            <tr><td>Solar Power Kit (10W)</td><td>Provides renewable energy for continuous operation</td></tr>
+            <tr><td>LiFePO4 Battery (12V 10Ah)</td><td>Stores energy for nighttime and low-light operation</td></tr>
+            <tr><td>LoRa Communication Module</td><td>Enables long-range wireless data transmission</td></tr>
+            <tr><td>Microcontroller &amp; PCB</td><td>Processes and manages sensor data</td></tr>
+            <tr><td>Marine Enclosure</td><td>Protects electronics from saltwater and weather damage</td></tr>
+        </table>
+
+        <h3>Why This Design Works</h3>
+        <p>This system is designed to be low-cost, scalable, and easy to deploy. Unlike traditional monitoring
+        stations that are expensive and fixed in place, HarborSense buoys can be deployed in multiple locations
+        and expanded over time. This makes it especially useful for smaller communities, marinas, and coastal
+        regions that currently lack real-time environmental monitoring tools.</p>
+    </section>
+
 </main>
+
 <footer>
     <p>&copy; 2026 HarborSense</p>
+    <p>Contact Us: <a href="mailto:info@harborsense.com">info@harborsense.com</a></p>
     <img src="seagull.jpg" alt="Seagull" class="thumbnail">
-    <p>Contact us at
-        <a href="mailto:info@harborsense.com">info@harborsense.com</a>
-        for more information.</p>
 </footer>
 </body>
 </html>
