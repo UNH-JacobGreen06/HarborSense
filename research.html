@@ -10,8 +10,25 @@
     <link rel="shortcut icon" href="boat.png">
 
     <meta name="description" content="HarborSense monitors ocean pollution using smart sensors.">
-    <meta name="keywords" content="ocean pollution, marina, sensors, environment, HarborSense, Pollution, Global Warming, Oceans, Harbors, Harbours, Sensors">
+    <meta name="keywords" content="ocean pollution, marina, sensors, environment, HarborSense">
     <meta name="author" content="Lauren Lynch, Jacob Greenberg, Ethan Young">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .chart-container {
+            width: 90%;
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        canvas {
+            max-height: 400px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,115 +47,154 @@
     <a href="survey.html">Survey</a>
     <a href="reflection.html">Reflection</a>
     <a href="contact.html">Contact</a>
+    <div class="quick-nav">
+        <a href="#purpose">Market</a>
+        <a href="#accomplish">Accomplish</a>
+        <a href="#audience">Audience</a>
+        <a href="#problem">Problem</a>
+        <a href="#survey">Survey Results</a>
+        <a href="#findings">Key findings</a>
+    </div>
 </nav>
 
 <main>
     <section>
-
-        <h2>What is the Purpose of the Site?</h2>
+        <h2 id="purpose">What is the Purpose of the Site?</h2>
         <p>
             The purpose of the HarborSense website is to present an innovative solution for monitoring
             ocean pollution using smart sensor technology. The site is designed to inform users about
             environmental challenges and demonstrate how real-time data can help communities better
             understand and respond to pollution.
         </p>
-
-        <h2>What Do We Want the Website to Accomplish?</h2>
+        <h2 id="accomplish">What Do We Want the Website to Accomplish?</h2>
         <p>
             The website aims to raise awareness about ocean pollution, educate users about its causes
             and effects, and promote HarborSense as a practical solution. It also encourages engagement
             by providing interactive elements such as maps, data visualizations, and a community survey.
-            Ultimately, the goal is to inspire action and support for cleaner coastal environments.
         </p>
 
-        <h2>Who Is the Target Audience?</h2>
+        <h2 id ="audience">Who Is the Target Audience?</h2>
         <p>
             The primary audience includes coastal community members, marina operators, environmental
-            advocates, students, and researchers who are interested in ocean health and pollution
-            monitoring. The site is written to be accessible to a general audience while still being
-            informative enough for technically minded visitors.
+            advocates, students, and researchers interested in ocean health and pollution monitoring.
         </p>
 
-        <h2>What Problem Does It Solve?</h2>
+        <h2 id="problem">What Problem Does It Solve?</h2>
         <p>
             Many coastal areas lack affordable, real-time tools to monitor water quality. Pollution from
             runoff, storms, and marine traffic often goes undetected until significant damage has already
             occurred. HarborSense addresses this gap by providing a low-cost, sensor-based monitoring
-            system that gives communities early warnings and actionable data before environmental damage
-            becomes severe.
+            system that gives communities early warnings and actionable data.
         </p>
 
         <h2>Similar Websites</h2>
-        <p>
-            During our research we examined several existing platforms that address ocean and water
-            quality monitoring:
-        </p>
+
         <ul>
-            <li><a href="https://www.noaa.gov/" target="_blank">NOAA</a> &ndash; Large-scale environmental data</li>
-            <li><a href="https://www.epa.gov/water-research" target="_blank">EPA</a> &ndash; Environmental protection and water quality data</li>
-            <li><a href="https://oceana.org/" target="_blank">Oceana</a> &ndash; Ocean conservation and advocacy</li>
+            <li><a href="https://www.noaa.gov/" target="_blank">NOAA</a> – Large-scale environmental data</li>
+            <li><a href="https://www.epa.gov/water-research" target="_blank">EPA</a> – Environmental protection and water quality data</li>
+            <li><a href="https://oceana.org/" target="_blank">Oceana</a> – Ocean conservation and advocacy</li>
         </ul>
+
+        <h2 id="survey">Survey Results</h2>
+
         <p>
-            While these websites provide valuable information, they often lack localized, real-time
-            monitoring tools designed specifically for small communities and marinas. HarborSense
-            focuses on accessibility and real-time decision-making.
+            We collected survey responses from students, coastal residents, environmental professionals,
+            and marina operators to better understand concerns about ocean pollution and interest in
+            HarborSense technology.
         </p>
 
-        <h2>Survey Results</h2>
-        <p>
-            A survey was conducted to better understand user interest, concerns, and desired features
-            for the HarborSense system. The results below summarize responses from participants
-            including students, coastal residents, and marina operators.
-        </p>
+        <div class="chart-container">
+            <h3>Main Concern of Participants</h3>
+            <canvas id="concernChart"></canvas>
+        </div>
 
-        <table>
-            <tr>
-                <th>#</th>
-                <th>Interested?</th>
-                <th>Main Concern</th>
-                <th>User Type</th>
-                <th>Distance from Coast</th>
-                <th>Concern Level</th>
-                <th>Wants System?</th>
-                <th>Desired Features</th>
-                <th>Would Pay?</th>
-                <th>Price Range</th>
-            </tr>
-            <tr><td>1</td><td>Yes</td><td>Pollution</td><td>Coastal Resident</td><td>Very Close</td><td>Very Concerned</td><td>Yes</td><td>All features</td><td>Yes</td><td>$100&ndash;$500</td></tr>
-            <tr><td>2</td><td>Yes</td><td>Safety</td><td>Student</td><td>Very Close</td><td>Very Concerned</td><td>Yes</td><td>All features</td><td>Yes</td><td>Under $100</td></tr>
-            <tr><td>3</td><td>Yes</td><td>Cost</td><td>Coastal Resident</td><td>Somewhat Close</td><td>Very Concerned</td><td>Yes</td><td>All features</td><td>Yes</td><td>Under $100</td></tr>
-            <tr><td>4</td><td>No</td><td>Safety</td><td>Student</td><td>Not Close</td><td>Somewhat Concerned</td><td>Yes</td><td>Real-time alerts</td><td>No</td><td>Under $100</td></tr>
-            <tr><td>5</td><td>Yes</td><td>Pollution</td><td>Student</td><td>Somewhat Close</td><td>Very Concerned</td><td>Yes</td><td>Pollution data</td><td>Yes</td><td>$100&ndash;$500</td></tr>
-            <tr><td>6</td><td>Yes</td><td>Pollution</td><td>Student</td><td>Somewhat Close</td><td>Somewhat Concerned</td><td>Yes</td><td>Alerts + Dashboard</td><td>Yes</td><td>$100&ndash;$500</td></tr>
-            <tr><td>7</td><td>Yes</td><td>Cost</td><td>Student</td><td>Very Close</td><td>Very Concerned</td><td>Yes</td><td>App + Data</td><td>Maybe</td><td>$100&ndash;$500</td></tr>
-            <tr><td>8</td><td>Yes</td><td>Safety</td><td>Marina Operator</td><td>Somewhat Close</td><td>Very Concerned</td><td>Yes</td><td>Dashboard</td><td>Yes</td><td>$100&ndash;$500</td></tr>
-            <tr><td>9</td><td>Yes</td><td>Cost</td><td>Student</td><td>Somewhat Close</td><td>Very Concerned</td><td>Yes</td><td>Alerts + Dashboard</td><td>Maybe</td><td>Under $100</td></tr>
-            <tr><td>10</td><td>Yes</td><td>Pollution</td><td>Coastal Resident</td><td>Somewhat Close</td><td>Very Concerned</td><td>Yes</td><td>Alerts + App + Dashboard</td><td>Maybe</td><td>$100&ndash;$500</td></tr>
-            <tr><td>11</td><td>Maybe</td><td>Pollution</td><td>Student</td><td>Somewhat Close</td><td>Very Concerned</td><td>Yes</td><td>Pollution data</td><td>Maybe</td><td>Under $100</td></tr>
-            <tr><td>12</td><td>Maybe</td><td>Cost</td><td>Student</td><td>Not Close</td><td>Somewhat Concerned</td><td>No</td><td>Alerts + Dashboard</td><td>Maybe</td><td>Under $100</td></tr>
-        </table>
+        <div class="chart-container">
+            <h3>Types of Survey Participants</h3>
+            <canvas id="userChart"></canvas>
+        </div>
 
-        <h2>Key Findings</h2>
+        <div class="chart-container">
+            <h3>Most Requested Features</h3>
+            <canvas id="featureChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Preferred Pricing Range</h3>
+            <canvas id="priceChart"></canvas>
+        </div>
+
+        <h2 id="findings">Key Findings</h2>
+
         <ul>
-            <li>Most participants are very concerned about pollution, especially those living near coastal areas.</li>
-            <li>The majority of users are interested in HarborSense and would use the system.</li>
-            <li>Real-time alerts and visual dashboards are the most requested features.</li>
-            <li>Cost is a significant concern &mdash; most respondents prefer pricing under $100 or in the $100&ndash;$500 range.</li>
-            <li>11 out of 12 participants said they want a monitoring system like HarborSense deployed in their area.</li>
-            <li>Pollution and safety were the top two main concerns across all user types.</li>
+            <li>Most participants expressed strong concern about pollution and water safety.</li>
+            <li>Real-time alerts and visual dashboards were the most requested HarborSense features.</li>
+            <li>Most respondents supported having HarborSense deployed in their community.</li>
+            <li>Students represented the largest survey group, followed by coastal residents.</li>
+            <li>Many respondents preferred a pricing model under $100 or between $100–$500.</li>
+            <li>Environmental professionals highlighted the importance of combining pollution tracking with safety alerts.</li>
         </ul>
 
     </section>
 </main>
 
-
 <footer>
     <p>&copy; 2026 HarborSense</p>
     <p>Contact Us: <a href="mailto:info@harborsense.com">info@harborsense.com</a></p>
+
     <a href="tech-insights.html">
         <img src="seagull.jpg" alt="Seagull" class="thumbnail">
     </a>
 </footer>
+
+<script>
+    new Chart(document.getElementById('concernChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Pollution', 'Safety', 'Cost'],
+            datasets: [{
+                label: 'Responses',
+                data: [8, 4, 5]
+            }]
+        }
+    });
+
+    new Chart(document.getElementById('userChart'), {
+        type: 'pie',
+        data: {
+            labels: ['Students', 'Coastal Residents', 'Environmental Professionals', 'Marina Operators'],
+            datasets: [{
+                data: [10, 5, 2, 1]
+            }]
+        }
+    });
+
+    new Chart(document.getElementById('featureChart'), {
+        type: 'bar',
+        data: {
+            labels: [
+                'Real-time Alerts',
+                'Mobile App',
+                'Pollution Data',
+                'Visual Dashboard'
+            ],
+            datasets: [{
+                label: 'Feature Requests',
+                data: [12, 7, 11, 12]
+            }]
+        }
+    });
+
+    new Chart(document.getElementById('priceChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Under $100', '$100-$500'],
+            datasets: [{
+                data: [8, 10]
+            }]
+        }
+    });
+
+</script>
 
 </body>
 </html>

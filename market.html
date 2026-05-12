@@ -24,12 +24,20 @@
     <a href="survey.html">Survey</a>
     <a href="reflection.html">Reflection</a>
     <a href="contact.html">Contact</a>
+    <div class="quick-nav">
+        <a href="#target-market">Market</a>
+        <a href="#competitors">Competitors</a>
+        <a href="#gap">Gap</a>
+        <a href="#swot">SWOT</a>
+        <a href="#risks">Risks</a>
+        <a href="#revenue">Revenue</a>
+        <a href="#development">Strategy</a>
+    </div>
 </nav>
 <main>
     <section>
 
-        <!-- ── TARGET MARKET ─────────────────────────────── -->
-        <h2>Target Market &amp; Customer Segments</h2>
+        <h2 id="target-market">Target Market &amp; Customer Segments</h2>
         <p>HarborSense serves communities and organizations that depend on healthy coastal waters but
         currently lack affordable, real-time monitoring tools.</p>
 
@@ -62,42 +70,177 @@
             </tr>
         </table>
 
-        <!-- ── COMPETITORS ───────────────────────────────── -->
-        <h2>Existing Solutions (Competitors)</h2>
-        <p>Several organizations and technologies already monitor ocean and water quality.
-        However, most focus on large-scale data collection rather than localized, real-time
-        monitoring that communities can directly use.</p>
+        <h2 id="competitors">Existing Solutions (Competitors)</h2>
+
+        <p>
+            Several organizations and technologies already monitor ocean and water quality.
+            Most existing systems are designed for scientific research, government regulation,
+            or industrial use rather than localized, real-time monitoring for communities and marinas.
+            Although these systems are highly advanced, they are often expensive, difficult for
+            everyday users to understand, or not focused on immediate local pollution detection.
+        </p>
 
         <table>
-            <tr><th>Solution</th><th>Type</th><th>Strengths</th><th>Limitations</th></tr>
+            <tr>
+                <th>Solution</th>
+                <th>Type</th>
+                <th>Detailed Strengths</th>
+                <th>Detailed Limitations</th>
+            </tr>
+
             <tr>
                 <td>NOAA Monitoring Systems</td>
                 <td>Government</td>
-                <td>Highly accurate, large-scale environmental data</td>
-                <td>Limited local accessibility; not real-time for communities</td>
+                <td>
+                    NOAA (National Oceanic and Atmospheric Administration) operates one of the most
+                    advanced environmental monitoring systems in the world. Their technology uses
+                    satellites, coastal stations, research vessels, and ocean buoys to collect highly
+                    accurate information about tides, ocean temperatures, weather patterns, and water
+                    quality. NOAA data is trusted by scientists, researchers, and government agencies
+                    for environmental forecasting and long-term research.
+                </td>
+                <td>
+                    NOAA systems focus primarily on large-scale national and scientific monitoring
+                    rather than local community access. Monitoring stations are often spread far apart,
+                    which means smaller marinas and coastal neighborhoods may not receive precise,
+                    real-time pollution alerts for their immediate area. The data can also be highly
+                    technical and difficult for non-scientists to interpret quickly.
+                </td>
             </tr>
+
+            <tr>
+                <td>EPA Water Monitoring Programs</td>
+                <td>Government</td>
+                <td>
+                    The EPA (Environmental Protection Agency) provides water quality monitoring,
+                    environmental regulations, and pollution testing programs throughout the United States.
+                    EPA systems help identify contamination sources, enforce environmental protection laws,
+                    and maintain national water safety standards. Their research and reporting systems
+                    provide valuable environmental information for public safety and policy decisions.
+                </td>
+                <td>
+                    EPA monitoring programs are often focused on regulation and periodic testing rather
+                    than continuous real-time monitoring. Many tests require laboratory analysis, which
+                    can delay results and slow public response times. Local communities may not have
+                    immediate access to easy-to-understand pollution data or live environmental alerts.
+                </td>
+            </tr>
+
             <tr>
                 <td>Satellite Data Platforms</td>
                 <td>Research</td>
-                <td>Global coverage and long-term trend analysis</td>
-                <td>Low resolution for local monitoring</td>
+                <td>
+                    Satellite monitoring systems provide global environmental coverage and help researchers
+                    track algae blooms, oil spills, sediment movement, coastal erosion, and long-term
+                    climate trends. These systems are extremely valuable for large-scale environmental studies
+                    and international monitoring efforts.
+                </td>
+                <td>
+                    Satellite systems lack the detailed resolution needed for local marina monitoring.
+                    Smaller pollution events near docks, harbors, and beaches may not be detected accurately.
+                    Cloud cover and weather conditions can also interfere with data collection and reduce
+                    reliability in certain environments.
+                </td>
             </tr>
+
             <tr>
                 <td>Private Sensor Companies</td>
                 <td>Commercial</td>
-                <td>Advanced technology and precision</td>
-                <td>High cost and limited accessibility for small communities</td>
+                <td>
+                    Commercial environmental monitoring companies develop highly advanced sensors capable
+                    of measuring pH levels, dissolved oxygen, chemical contamination, and other important
+                    water quality indicators. Many systems also include cloud-based dashboards and advanced
+                    analytics for scientific and industrial users.
+                </td>
+                <td>
+                    These systems are often expensive to purchase, maintain, and operate. Smaller marinas,
+                    schools, and local environmental organizations may not have the funding or technical
+                    training required to use these platforms effectively.
+                </td>
             </tr>
+
             <tr>
-                <td><a href="https://www.hultprize.org/hult-prize-winners/2025/lir-labs" target="_blank">Lir Labs</a></td>
+                <td>
+                    <a href="https://www.hultprize.org/hult-prize-winners/2025/lir-labs" target="_blank">
+                        Lir Labs
+                    </a>
+                </td>
                 <td>AI Startup</td>
-                <td>Real-time AI detection of contamination sources; 2025 Hult Prize finalist</td>
-                <td>Designed for on-site water treatment facilities, not open coastal environments</td>
+                <td>
+                    Lir Labs uses AI-powered optical sensors to identify contamination sources and
+                    classify particle types in real time. Their technology allows rapid analysis of
+                    water conditions and has gained recognition as a 2025 Hult Prize environmental
+                    sustainability finalist.
+                </td>
+                <td>
+                    The system is designed mainly for industrial and water treatment environments rather
+                    than open coastal waters and marinas. Because the company is still in its early stages,
+                    large-scale deployment and accessibility remain limited.
+                </td>
             </tr>
         </table>
 
-        <!-- ── MARKET GAP ─────────────────────────────────── -->
-        <h2>Market Gap</h2>
+        <h2>Why HarborSense is Different</h2>
+
+        <p>
+            HarborSense addresses many limitations found in existing systems by focusing specifically
+            on local communities, marinas, and coastal environments. Instead of only serving scientists
+            or government agencies, HarborSense is designed to provide simple, affordable, and real-time
+            environmental monitoring directly to everyday users.
+        </p>
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Government Systems</th>
+                <th>HarborSense</th>
+            </tr>
+
+            <tr>
+                <td>Primary Users</td>
+                <td>Scientists and government agencies</td>
+                <td>Communities, marinas, and local residents</td>
+            </tr>
+
+            <tr>
+                <td>Accessibility</td>
+                <td>Complex scientific data platforms</td>
+                <td>Simple dashboard with easy-to-read alerts</td>
+            </tr>
+
+            <tr>
+                <td>Monitoring Scale</td>
+                <td>Regional and national monitoring</td>
+                <td>Localized marina and harbor monitoring</td>
+            </tr>
+
+            <tr>
+                <td>Real-Time Alerts</td>
+                <td>Limited direct community notifications</td>
+                <td>Immediate pollution alerts and updates</td>
+            </tr>
+
+            <tr>
+                <td>Affordability</td>
+                <td>High infrastructure and operational costs</td>
+                <td>Lower-cost scalable deployment</td>
+            </tr>
+
+            <tr>
+                <td>Ease of Use</td>
+                <td>Technical and research-focused systems</td>
+                <td>User-friendly visual interface</td>
+            </tr>
+        </table>
+
+        <p>
+            While government organizations such as NOAA and the EPA provide highly accurate scientific
+            research and national environmental monitoring, HarborSense focuses on solving a different
+            problem: helping local communities quickly detect and respond to pollution events using
+            affordable and accessible technology.
+        </p>
+
+        <h2 id="gap">Market Gap</h2>
         <p>Current solutions are either too expensive, too large-scale, or not accessible to local
         communities. HarborSense fills this gap by offering an affordable, real-time monitoring
         system specifically designed for marinas and coastal areas.</p>
@@ -111,14 +254,13 @@
             <tr><td>Storm-Event Detection</td><td>No</td><td>Yes</td></tr>
         </table>
 
-        <!-- ── SWOT ──────────────────────────────────────── -->
-        <h2>SWOT Analysis</h2>
+        <h2 id="swot">SWOT Analysis</h2>
         <table>
             <tr><th>Strengths</th><th>Weaknesses</th></tr>
             <tr>
                 <td>
                     &bull; Low-cost, scalable hardware using off-the-shelf components<br>
-                    &bull; Solar-powered — no grid infrastructure needed<br>
+                    &bull; Solar-powered no grid infrastructure needed<br>
                     &bull; Real-time alerts tailored to local conditions<br>
                     &bull; Simple data interface accessible to non-technical users
                 </td>
@@ -146,8 +288,7 @@
             </tr>
         </table>
 
-        <!-- ── RISKS ─────────────────────────────────────── -->
-        <h2>Market Risks</h2>
+        <h2 id="risks">Market Risks</h2>
         <table>
             <tr><th>Risk</th><th>Probability</th><th>Impact</th><th>Mitigation Strategy</th></tr>
             <tr>
@@ -175,11 +316,10 @@
         <h2>Prioritized Risk Assessment</h2>
         <p>The most significant risks are high initial cost and technical reliability, as both directly
         impact adoption and community trust. These are prioritized because they carry the highest combined
-        probability and impact scores. Addressing them early — through phased rollout, grant funding, and
-        rigorous testing — increases the likelihood of long-term success.</p>
+        probability and impact scores. Addressing them early through phased rollout, grant funding, and
+        rigorous testing increases the likelihood of long-term success.</p>
 
-        <!-- ── REVENUE MODEL ─────────────────────────────── -->
-        <h2>Revenue Model</h2>
+        <h2 id="revenue">Revenue Model</h2>
         <p>HarborSense is designed to generate sustainable revenue through a combination of hardware sales
         and ongoing service subscriptions, keeping the cost accessible while funding continued development.</p>
 
@@ -207,33 +347,30 @@
             </tr>
         </table>
 
-        <!-- ── PRODUCT STRATEGY ──────────────────────────── -->
-        <h2>Product Development Strategy</h2>
-        <table>
+        <h2 id="development">Product Development Strategy</h2>        <table>
             <tr><th>Phase</th><th>Description</th><th>Success Metric</th></tr>
             <tr>
-                <td>Phase 1 &mdash; Pilot</td>
+                <td>Phase 1 - Pilot</td>
                 <td>Deploy sensors in 2&ndash;3 small marinas; collect performance and feedback data</td>
                 <td>90-day uptime &ge;95%; at least 2 pollution events detected</td>
             </tr>
             <tr>
-                <td>Phase 2 &mdash; Expand</td>
+                <td>Phase 2 - Expand</td>
                 <td>Roll out to larger coastal communities and municipal ports</td>
                 <td>10+ active deployments; first paying subscription customers</td>
             </tr>
             <tr>
-                <td>Phase 3 &mdash; Scale</td>
+                <td>Phase 3 - Scale</td>
                 <td>Partner with environmental agencies and scale globally</td>
                 <td>50+ deployments; data licensing agreements in place</td>
             </tr>
         </table>
 
-        <!-- ── INNOVATION ────────────────────────────────── -->
         <h2>Why HarborSense is Innovative</h2>
         <p>HarborSense combines real-time monitoring, affordability, and community accessibility into a
         single integrated system. Unlike existing solutions that are either too expensive for small
         communities or too broad for local use, HarborSense is purpose-built for the marina and coastal
-        environment — delivering actionable data to the people who need it most, when they need it most.</p>
+        environment delivering actionable data to the people who need it most, when they need it most.</p>
 
     </section>
 </main>

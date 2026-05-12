@@ -61,22 +61,110 @@ p {
     margin-bottom: 18px;
 }
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     grid-area: nav;
+
     background: #023e8a;
+
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 nav a {
     color: white;
-    padding: 12px 18px;
     text-decoration: none;
+
+    padding: 10px 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: background 0.25s ease;
 }
 
 nav a:hover,
 nav a.active {
     background: #0077b6;
+}
+
+.quick-nav {
+    position: static;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    width: 100%;
+    background: rgba(255,255,255,0.96);
+
+    padding: 6px 10px;
+
+    border-top: 1px solid #dbe7f0;
+}
+
+.quick-nav a {
+    text-decoration: none;
+
+    color: #023e8a;
+    background: #f0f7fc;
+
+    padding: 5px 12px;
+    border-radius: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: all 0.2s ease;
+}
+
+.quick-nav a:hover {
+    background: #0077b6;
+    color: white;
+    transform: translateY(-1px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-menu {
+    position: sticky;
+    top: 70px;
+    z-index: 999;
+    background-color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #0077b6;
+}
+
+.scroll-menu a {
+    display: inline-block;
+    margin: 6px 10px;
+    padding: 10px 18px;
+    background-color: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.scroll-menu a:hover {
+    background-color: #023e8a;
+    transform: scale(1.05);
+}
+html {
+    scroll-behavior: smooth;
 }
 
 header p {
@@ -248,5 +336,18 @@ section > * {
     .hero-text {
         font-size: 14px;
         padding: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .quick-nav {
+        top: 42px;
+        gap: 6px;
+        padding: 5px;
+    }
+
+    .quick-nav a {
+        font-size: 11px;
+        padding: 4px 10px;
     }
 }
